@@ -2,39 +2,69 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>HAPPY BIRTHDAY HUY CU!!</title>
+  <title>Otaku Birthday</title>
   <style>
     body {
-      background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') no-repeat center center fixed;
+      background: url('https://i.gifer.com/VgYg.gif') no-repeat center center fixed;
       background-size: cover;
-      color: #ff00ff;
-      font-family: Comic Sans MS, cursive;
+      font-family: 'Comic Sans MS', cursive;
+      color: #fff;
       text-align: center;
-      padding-top: 100px;
-      animation: rainbow 3s infinite;
+      padding: 80px 20px;
+      overflow: hidden;
     }
+
     h1 {
       font-size: 60px;
-      animation: bounce 1s infinite alternate;
-      text-shadow: 3px 3px 5px yellow;
+      color: #ff66cc;
+      text-shadow: 3px 3px 10px yellow, -3px -3px 10px cyan;
+      animation: glow 1s infinite alternate;
     }
+
     p {
       font-size: 30px;
-      color: cyan;
-      animation: spin 5s linear infinite;
+      color: #00ffff;
+      animation: bounce 1s infinite;
     }
+
     .emoji {
-      font-size: 60px;
+      font-size: 80px;
       animation: shake 0.5s infinite;
     }
 
-    @keyframes bounce {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-20px); }
+    audio {
+      display: none;
     }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px pink; }
+      to { text-shadow: 0 0 30px #fff000; }
+    }
+
+    @keyframes bounce {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+      100% { transform: rotate(-10deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">✨(≧◡≦)✨</div>
+  <h1>Happy Birthday Huy Cu!</h1>
+  <p>Level Max, Cringe Max, Waifu Forever!</p>
+  <div class="emoji">UwU ~♥~</div>
+
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/3v2i1z.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>      100% { transform: rotate(360deg); }
     }
     @keyframes shake {
       0% { transform: rotate(-10deg); }
