@@ -1,40 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday Huy Cu</title>
+  <title>HAPPY BIRTHDAY HUY CU!!</title>
   <style>
     body {
-      background: linear-gradient(45deg, #ff00ff, #ffff00);
-      color: #ff1493;
-      font-family: 'Comic Sans MS', cursive;
+      background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #ff00ff;
+      font-family: Comic Sans MS, cursive;
       text-align: center;
-      padding: 50px;
-      animation: colorchange 5s infinite;
-    }
-    @keyframes colorchange {
-      0% { background-color: #ffccff; }
-      50% { background-color: #ffffcc; }
-      100% { background-color: #ffccff; }
+      padding-top: 100px;
+      animation: rainbow 3s infinite;
     }
     h1 {
-      font-size: 3.5em;
-      animation: wobble 1s infinite;
-    }
-    @keyframes wobble {
-      0%, 100% { transform: rotate(-5deg); }
-      50% { transform: rotate(5deg); }
-    }
-    .gif {
-      margin-top: 30px;
-      border: 10px dotted #ff69b4;
-      border-radius: 20px;
+      font-size: 60px;
+      animation: bounce 1s infinite alternate;
+      text-shadow: 3px 3px 5px yellow;
     }
     p {
-      font-size: 1.5em;
-      background: #fff;
-      padding: 15px;
+      font-size: 30px;
+      color: cyan;
+      animation: spin 5s linear infinite;
+    }
+    .emoji {
+      font-size: 60px;
+      animation: shake 0.5s infinite;
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-20px); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes shake {
+      0% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+      100% { transform: rotate(-10deg); }
+    }
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">✨🎉💥</div>
+  <h1>HAPPY BIRTHDAY HUY CU!!</h1>
+  <p>LV MAX CRINGE CELEBRATION</p>
+  <div class="emoji">🔥👑🦄</div>
+</body>
+</html>      padding: 15px;
       border-radius: 10px;
       display: inline-block;
     }
