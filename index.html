@@ -273,9 +273,7 @@
     </style>
 </head>
 <body>
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-spinner"></div>
-        <h2>Những điều tốt đẹp đều cần thời gian...</h2>
+    <h2>Những điều tốt đẹp đều cần thời gian...</h2>
         <p>Vui lòng đợi trong giây lát</p>
     </div>
 
@@ -332,7 +330,7 @@
     createdAt: "2025-05-30T00:00:00.000Z"
 };
 
-        const loadingScreen = document.getElementById('loadingScreen');
+        
         const errorScreen = document.getElementById('errorScreen');
         const galaxy = document.getElementById('galaxy');
 
@@ -421,12 +419,12 @@ document.addEventListener('touchend', () => {
         }
 
         function showError() {
-            loadingScreen.style.display = 'none';
+            
             errorScreen.style.display = 'flex';
         }
 
         function initializeGalaxy() {
-            loadingScreen.style.display = 'none';
+            
             
             // Apply custom colors to CSS
             const style = document.createElement('style');
