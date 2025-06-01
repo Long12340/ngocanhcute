@@ -298,7 +298,7 @@
         // Lấy galaxy ID từ URL
         const urlParams = new URLSearchParams(window.location.search);
         const galaxyId = urlParams.get('id');
-        const isDemo = urlParams.get('demo') === '1';
+        const isDemo = true; // Luôn chạy demo, không cần ?demo=1
 
 
         const demoGalaxyData = {
